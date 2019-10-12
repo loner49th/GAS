@@ -1,6 +1,6 @@
 # GAS
 
-- Google apps scriptで作ったものを置く場所
+- Google Apps Scriptで作ったものを置く場所
 - ChangeSpreadSheetName
   - Googleドライブのあるフォルダにあるファイル一覧を一括ファイル名を変更するスクリプト
     - 正規表現で一致するファイルのみ変更
