@@ -16,13 +16,9 @@ function ChangeSpreadSheetName() {
         var sheets = ss.getSheets();
         
         // 一番左上のセルの値にファイル名を変更する
-        var sheetdata = sheets[0].getSheetValues(1, 1, 1, 1);
-        
-        // 日付をyyyyMMddに変更してファイル名とする
-        var datestring = Utilities.formatDate(DateConverter(sheetdata[0][0]), "JST", "yyyyMMdd");
-        var filename = datestring
+        var sheetdata = sheets[0].getSheetValues(1, 1, 1, 1);       
 
-        ss.rename(filename);
+        ss.rename(sheetdata);
     }
   } 
 }
